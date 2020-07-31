@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>상민마켓</title>
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .photo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 500px;
+            height: 300px;
+            background-image: url("https://t1.daumcdn.net/cfile/tistory/990FE2365D95E8CC0F");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .big {
+            font-size: 38px;
+        }
+
+        .small {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .orderbox {
+            width: 500px;
+        }
+
+        .mybutton {
+            margin: auto;
+            display: block;
+        }
+
+        .wrap {
+            margin: auto;
+            width: 500px;
+        }
+
+    </style>
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+        }
+    </script>
+    <script>
+        function warning() {
+            alert('최대주문수량은 4개입니다.')
+        }
+
+        function makecard(image, url, title, desc, comment){
+            let card_html =
+                `
+                card=img_title ${comment}
+                `
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+<div class="wrap">
+    <div class="photo"></div>
+    <div class="box">
+        <span class="big">아이패드 프로12.9 </span>
+        <span class="small">가격: 1,169,000원/개</span>
+        <p>가장 높은 생산성을 경험하세요. </p>
+    </div>
+    <div class="orderbox">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                   aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">색상</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">스페이스그레이</option>
+                <option value="2">실버</option>
+                <option value="3">골드</option>
+            </select>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">용량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">128GB</option>
+                    <option value="2">256GB (+120,000원)</option>
+                    <option value="3">512GB (+240,000원)</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="mybutton">
+                    <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+                </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+</body>
+</html>
